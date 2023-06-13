@@ -6,18 +6,106 @@
     <title>HTML EN 1 HORA</title>
   </head>
   <body>
-    <h1>Mi primer Heading o Título Inical</h1>
+    <h1>Mi primer Heading o Título Inicial</h1>
     <h2>Mi segundo Heading o Subtítulo inicial</h2>
     <h3>Mi tercer subtítulo</h3>
     <h4>Mi cuarto subtítulo</h4>
     <h5>Mi quinto subtítulo</h5>
     <h6>Mi último subtítulo</h6>
     <p>Aquí se puede colocar un texto a manera de párrafo</p>
+
     <p>Este sería un segundo párrafo</p>
-    <hr>
+
+    <hr />
     <h2>Este sería un subtítulo</h2>
+
     <p>Aquí iría la descripción de este subtítulo a manera de párrafo</p>
+
     <!--Esta etiqueta se usa para generar comentarios en el código -->
-    
+    <p>
+      Usando la etiqueta span podemos aplicar estilos dentro de nuestra página
+      web por ejemplo
+      <span style="color: blue"
+        >Este texto lleva un estilo generado durante la edición de este
+        código</span>
+    </p>
+
+    <p>
+      la etiqueta "br" nos permite crear un salto de línea <br />para separar el
+      texto dentro de nuestro html
+    </p>
+
+    <hr />
+
+    <p>
+      Ahora vamos a ver el uso de la etiqueta ancor (a) la cual le podemos pasar
+      un propiedad para poder navegar mediante el uso de (href="AQUÍ INDICAMOS
+      LA URL") ejmplo:
+      <a href="https://www.bing.com/"> Ir al navegador bing</a>
+    </p>
+
+    <p>
+      Para que no nos saque dl navegar y lo que haga sea abrir el link en una
+      nueva página <br />
+      podemos usar una propiedad asignarle una nueva propiedad a nuestra
+      etiqueta ancor (a) de la siguiente manera: ("a target="_blank"
+      href="https://www.google.com.mx"> Ir a google(/a)"). Cambié los mayor que
+      y menor que, con motivos de que no se ejecute el código
+      <a target="_blank" href="https://www.google.com.mx"> Ir a google</a>
+    </p>
+
+    <hr />
+
+    <p>
+      Para mostrar imágenes al usuario haríamos uso de la etiqueta img. Esta
+      etiqueta no requiere el uso de la etiqueta de cierre.
+      <br/>
+      Aquí tenemos dos alternativas: la primera sería mediante nuestra ubicación 
+      local o mediante el uso de un link externo.
+      <img
+        src="https://i.pinimg.com/originals/f0/d6/c7/f0d6c70070278021bea91927fbe231a8.jpg"
+        alt="Las etiquetas más usaradas de html"/>
+    </p>
+
+    <hr />
+
+    <p>
+      Otra forma de mostrar texto mediante local, sería directamente ordenando
+      la ruta desde donde tenemos las imagenes guardadas. <br />Es recomendable
+      durante el desarrollo de nuestros proyectos mantener una carpeta en
+      nuestro directorio así: img
+      <img
+        src="/07/img/etiquetas_html.png"
+        alt="Las etiuetas HTML más comunes (Sin formato de ancho)"/>
+      <hr>
+      Para ajustar el tamaño de la imagen dentro de la etiqueta img, le
+      indicaremos con la propiedad width el ancho en pixeles que queremos
+      asignarle a la imagen. También el width manipula el height (alto ) 
+      de la imagen de manera proporcional al ancho, por ello, es recomendable 
+      no manipular el height, salvo casos especiales que lo ameriten.
+      <br/>
+      <img src="/07/img/etiquetas_html.png" alt="Las etiuetas HTML más comunes (con formato de ancho)" width="800" />
+    </p>
+
+    <h2>Uso de la etiqueta form para crear formularios</h2>
+    <hr>
+
+    <p>
+      El uso de la etiqueta form nos permite recopilar información del usuario. 
+      Dentro del cuerpo de esta etiqueta debemos iniciar con la etiqueta input,
+      esta, al igual que la etiqueta img, puede ser cerrada al momento sin ningún problema.
+      para que estas etiequetas tengan sentido, haremos uso de "label"
+    </p>
+
+    <form>
+      <label for="Nombre">Nombre</label>
+      <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"/>
+
+      <label for="Apellido">Apellido</label>
+      <input type="text" id="Apellido" name="Apellido" placeholder="Apellido">
+
+      <label for="emai">email</label>
+      <input type="email" id="emai" name="emai" placeholder="email"/>
+    </form>
   </body>
 </html>
